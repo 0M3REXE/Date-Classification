@@ -1,19 +1,38 @@
-# 🎈 Blank app template
+# Date Classification Project
 
-A simple Streamlit app template for you to modify!
+## Overview
+This project uses deep learning to classify date fruits into two varieties: Ajwa and Medjool.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Dataset
+The dataset used is from the UCI Machine Learning Repository:
+- **Dataset Name**: Ajwa or Medjool
+- **Source**: https://archive.ics.uci.edu/static/public/879/ajwa+or+medjool.zip
+- **Classes**: 2 (Ajwa and Medjool dates)
+- **Format**: JPG images
 
-### How to run it on your own machine
+## Model Architecture
+The classification model is a Convolutional Neural Network (CNN) built with TensorFlow:
+- 3 convolutional layers with ReLU activation and max pooling
+- Flattening layer
+- Dense layer with 128 neurons and ReLU activation
+- Output layer with softmax activation for 2 classes
 
-1. Install the requirements
+## Training
+- The model is trained for 10 epochs
+- Data is split into 80% training and 20% validation sets
+- Uses Adam optimizer and sparse categorical crossentropy loss
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## Web Application
+The project includes a Streamlit web application that allows users to:
+- Upload images of dates
+- Get instant classification results (Ajwa or Medjool)
+- Learn about the different types of date varieties
+https://date-classifcation.streamlit.app/
 
-2. Run the app
+## Date Varieties Information
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+### Ajwa Dates
+Soft, dark brown dates from Medina, Saudi Arabia. They're known for their distinctive taste and religious significance.
+
+### Medjool Dates
+Larger, sweeter dates often called the "king of dates." They originate from Morocco and are popular worldwide for their caramel-like flavor.
