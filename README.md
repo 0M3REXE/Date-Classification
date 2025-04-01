@@ -22,11 +22,8 @@ The classification model is a Convolutional Neural Network (CNN) built with Tens
 - Data is split into 80% training and 20% validation sets
 - Uses Adam optimizer and sparse categorical crossentropy loss
 
-## Web Application
-The project includes a Streamlit web application that allows users to:
-- Upload images of dates
-- Get instant classification results (Ajwa or Medjool)
-- Learn about the different types of date varieties
+## Try It Out Yourself
+Use the Sample Images
 https://date-classifcation.streamlit.app/
 
 ## Date Varieties Information
